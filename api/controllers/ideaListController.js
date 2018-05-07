@@ -1,6 +1,5 @@
 'use strict';
 
-
 var mongoose = require('mongoose'),
   Idea = mongoose.model('Ideas');
 
@@ -12,9 +11,6 @@ exports.list_all_ideas = function(req, res) {
   });
 };
 
-
-
-
 exports.create_a_idea = function(req, res) {
   var new_idea = new Idea(req.body);
   new_idea.save(function(err, idea) {
@@ -24,7 +20,6 @@ exports.create_a_idea = function(req, res) {
   });
 };
 
-
 exports.read_a_idea = function(req, res) {
   Idea.findById(req.params.ideaId, function(err, idea) {
     if (err)
@@ -32,7 +27,6 @@ exports.read_a_idea = function(req, res) {
     res.json(idea);
   });
 };
-
 
 exports.update_a_idea = function(req, res) {
   Idea.findOneAndUpdate({_id: req.params.ideaId}, req.body, {new: true}, function(err, idea) {
@@ -42,10 +36,7 @@ exports.update_a_idea = function(req, res) {
   });
 };
 
-
 exports.delete_a_idea = function(req, res) {
-
-
   Idea.remove({
     _id: req.params.ideaId
   }, function(err, idea) {
