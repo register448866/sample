@@ -1,0 +1,30 @@
+{
+  "name": "ideaapi",
+  "version": "1.0.0",
+  "description": "RESTful ideaApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/register448866/sample.git"
+  },
+  "keywords": [
+    "RESTful"
+  ],
+  "author": "V.Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/register448866/sample/issues"
+  },
+  "homepage": "https://github.com/register448866/sample#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.17",
+    "npm": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
